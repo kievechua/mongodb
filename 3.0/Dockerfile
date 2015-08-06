@@ -1,6 +1,8 @@
 FROM mongo:3.1.6
 MAINTAINER Kieve Chua <kievechua@gmail.com>
 
+RUN apt-get install -y pwgen
+
 ENV AUTH yes
 ENV STORAGE_ENGINE wiredTiger
 ENV JOURNALING yes
