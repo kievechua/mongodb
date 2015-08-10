@@ -1,3 +1,12 @@
+Based on Tutum's Mongodb with official image
+
+[Tutum Mongo](https://github.com/tutumcloud/mongodb)
+
+[Mongo](https://github.com/docker-library/mongo)
+
+Trying to fix this [issue](http://stackoverflow.com/questions/19668570/mongodb-localefacet-s-create-c-locale-name-not-valid)
+
+
 tutum-docker-mongodb
 ====================
 
