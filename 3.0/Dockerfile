@@ -4,8 +4,8 @@ MAINTAINER Kieve Chua <kievechua@gmail.com>
 RUN apt-get update && apt-get install -y pwgen
 
 # Change the docker default timezone from UTC to KLT
-RUN sudo echo "Asia/Kuala_Lumpur" > /etc/timezone
-RUN sudo dpkg-reconfigure -f noninteractive tzdata
+RUN echo "Asia/Kuala_Lumpur" > /etc/timezone
+RUN dpkg-reconfigure -f noninteractive tzdata
 
 ENV AUTH yes
 ENV STORAGE_ENGINE wiredTiger
