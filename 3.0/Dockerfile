@@ -1,4 +1,4 @@
-FROM mongo:3.1.6
+FROM mongo:3.0.7
 MAINTAINER Kieve Chua <kievechua@gmail.com>
 
 RUN apt-get update && apt-get install -y pwgen sudo
