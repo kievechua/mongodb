@@ -1,4 +1,4 @@
-FROM mongo:3.0.7
+FROM mongo:2.6.11
 MAINTAINER Kieve Chua <kievechua@gmail.com>
 
 RUN apt-get update && apt-get install -y pwgen sudo
@@ -9,7 +9,7 @@ RUN sudo echo "Asia/Kuala_Lumpur" > /etc/timezone
 RUN sudo dpkg-reconfigure -f noninteractive tzdata
 
 ENV AUTH yes
-ENV STORAGE_ENGINE wiredTiger
+# ENV STORAGE_ENGINE wiredTiger
 ENV JOURNALING yes
 
 ADD run.sh /run.sh
